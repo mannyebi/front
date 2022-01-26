@@ -7,6 +7,15 @@
     font-family: 'Noto Sans', sans-serif;
 
 }
+.flex_center_center_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mb-3{
+    margin-bottom: 1.5rem;
+}
 li {
     list-style: none;
     cursor: pointer;
@@ -46,6 +55,26 @@ nav{
 .image{
     width: 100vw;
 }
+
+.text__box{
+    position: absolute;
+    top: 27vw;
+    width: 100%;
+    height: 12vw;
+    background: rgba(211, 211, 211, 0.363);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text__inside{
+    position: relative;
+    text-align: center;
+    background: rgba(211, 211, 211, 0.600);
+    width: 50vw;
+    height: 100%;
+}
+
 @media (max-width:950px){
     .menus li{
         margin: 0.5rem;
@@ -61,6 +90,11 @@ nav{
 }
 @media(min-width:700px){
     .menu__logo{
+        display: none;
+    }
+}
+@media(max-width:480px){
+    .text__box{
         display: none;
     }
 }
