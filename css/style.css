@@ -210,7 +210,7 @@ nav{
     margin: 5px;
     flex-basis: calc(25% - 10px);
     height: 70vh;
-    background: rgb(0, 0, 0);
+    background: #fff;
 }
 
 .back{
@@ -233,6 +233,40 @@ nav{
 }
 .text__area h1{
     margin-bottom: 15px;
+    font-size: 2.2vw;
+    font-size: bold;
+}
+.text__area p{
+    font-size: 1.1vw;
+    color: rgb(63, 63, 63);
+    line-height: 1.2rem;
+}
+@media (max-width:1000px){
+    .text__area p{
+        font-size: 1.3vw;
+    }
 }
 
+@media (max-width:850px){
+    .text__area p{
+        font-size: 1.4vw;
+    }
+}
+@media (max-width:640px){
+    .text__area p{
+        font-size: 1.8vw;
+    }
+    .text__area h1{
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width:500px){
+    .text__area p{
+        font-size: 2.2vw;
+    }
+    .text__area h1{
+        font-size: 3.5vw;
+    }
+}
 
