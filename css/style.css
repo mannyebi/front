@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 14px;
+    font-size: 2.2vmin;
     font-family: 'Noto Sans', sans-serif;
 
 }
@@ -105,9 +105,14 @@ nav{
 }
 
 .para{
-    font-size: 1rem;
+    font-size: 2vmin;
     line-height: 1.7rem;
     color: rgb(83, 83, 83);
+}
+@media(max-width:425px){
+    .para{
+        font-size: 2.5vmin;
+    }
 }
 
 @media(max-width:828px){
@@ -138,18 +143,6 @@ nav{
 @media(max-width:320px){
     .first__header{
         font-size: 5vw;
-    }
-}
-
-@media(max-width:890px){
-    .para{
-        font-size: 0.93rem;
-        line-height: 1.3rem;
-    }
-}
-@media(max-width:500px){
-    .para{
-        font-size: 0.83rem;
     }
 }
 
@@ -208,38 +201,60 @@ nav{
 }
 .card{
     margin: 5px;
-    flex-basis: calc(25% - 10px);
-    height: 70vh;
-    background: #fff;
+    flex-basis: calc(25% - 20px);
+    background: rgb(240, 240, 240);
+    position: relative;
+    border: 1px solid rgb(220, 220, 220);
+}
+@media(max-width:570px){
+    .card{
+        flex-basis: calc(100% - 10px);
+    }
 }
 
 .back{
     position: relative;
-    background: greenyellow;
+    background: #ed5441;
     height: 25vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.bg1{
+    background: #D867B2;
+}
+
+.bg2{
+    background: #4BC567;
+}
+
+.bg3{
+    background: #26AFF0;
+}
+
 .fas{
     color: white;
-    font-size: 80px;
+    font-size: 5rem;
 }
 
 .text__area{
     text-align: left;
+    margin: auto;
     margin:10px;
+    width: 80%;
 }
 .text__area h1{
     margin-bottom: 15px;
-    font-size: 2.2vw;
+    font-size: 1.8vw;
     font-size: bold;
+    z-index: inherit;
 }
 .text__area p{
-    font-size: 1.1vw;
+    width: 100%;
+    font-size: 1vw;
     color: rgb(63, 63, 63);
-    line-height: 1.2rem;
+    line-height: 2vw;
 }
 @media (max-width:1000px){
     .text__area p{
@@ -270,3 +285,49 @@ nav{
     }
 }
 
+@media (max-width:430px){
+    .text__area p{
+        font-size: 2.5vw;
+        line-height: 4vw;
+    }
+}
+@media (max-width:370px){
+    .text__area p{
+        font-size: 2.5vw;
+        line-height: 4vw;
+    }
+}
+
+@media (max-width:300px){
+    .text__area p{
+        font-size: 3.5vw;
+        line-height: 5vw;
+    }
+}
+
+.quote__container{
+    margin: 5rem 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 6vw 4vw;
+    background: #EFEFEF;
+}
+
+.quote{
+    width: 80%;
+    margin-bottom: 5vw;
+    font-size: 3vmin;
+    text-align: center;
+}
+
+.by{
+    font-size: 2.5vmin;
+    font-weight: bolder;
+}
+
+.offer__container{
+    width: 80%;
+    margin: auto;
+}
