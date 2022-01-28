@@ -357,6 +357,7 @@ nav{
     align-self: center;
 }
 
-.offer__cards{
-    flex-basis: 33.33%;
+.offer__card{
+    background: rgb(212, 0, 0);
+    width: 100%;
 }
