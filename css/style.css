@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-size: 2.2vmin;
     font-family: 'Noto Sans', sans-serif;
-
+    text-transform: capitalize;
 }
 i{
     font-style: 48px;
@@ -330,4 +330,33 @@ nav{
 .offer__container{
     width: 80%;
     margin: auto;
+    text-align: center;
+}
+
+.offer__container h2{
+    font-size: 5vmin;
+    margin-bottom: 2vw;
+}
+
+.offer__container p{
+    font-size: 2vmin;
+    line-height: 3.5vmin;
+    margin-bottom: 2vw;
+}
+
+@media (max-width:425px){
+    .offer__container p{
+        font-size: 2.5vmin;
+    }
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.offer__cards{
+    flex-basis: 33.33%;
 }
